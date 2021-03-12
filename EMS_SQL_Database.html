@@ -1,0 +1,362 @@
+<html><head>
+<title>Schema Report for database: EMS_DB</title>
+<style>
+        td,th {
+        text-align:left;
+        vertical-align:middle;
+        }
+        table {
+        border-collapse: collapse;
+        border: 1px solid;
+        }
+        caption, th, td {
+        padding: .2em .8em;
+        border: 1px solid #000000;
+        }
+        caption {
+        background: #D3D3D3;
+        font-weight: bold;
+        font-size: 1.1em;
+        }
+        th {
+        font-weight: bold;
+        background: #000000;
+        color: white;
+        }
+        td {
+        background: #FFFFFF;
+        }
+        </style>
+      </head>
+     <body>
+<h1>Schema Report for database: EMS_DB</h1>
+<a id="home">Table List </a><br /><ul>
+<li><a href="#Users">Users </a></li>
+<li><a href="#c_contact_details">c_contact_details </a></li>
+<li><a href="#ca_contact_details">ca_contact_details </a></li>
+<li><a href="#ca_salary_details">ca_salary_details </a></li>
+<li><a href="#catering_info">catering_info </a></li>
+<li><a href="#client">client </a></li>
+<li><a href="#conference_info">conference_info </a></li>
+<li><a href="#event">event </a></li>
+<li><a href="#event_schedule">event_schedule </a></li>
+<li><a href="#ids">ids </a></li>
+<li><a href="#inventory">inventory </a></li>
+<li><a href="#p_contact_details">p_contact_details </a></li>
+<li><a href="#p_salary_details">p_salary_details </a></li>
+<li><a href="#production_info">production_info </a></li>
+<li><a href="#s_contact_details">s_contact_details </a></li>
+<li><a href="#seminar_info">seminar_info </a></li>
+<li><a href="#staff">staff </a></li>
+<li><a href="#venue">venue </a></li>
+<li><a href="#w_contact_details">w_contact_details </a></li>
+<li><a href="#wedding_info">wedding_info </a></li>
+</ul>
+<a id="Users"></a><table style="width:100%"><caption>Table: Users </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        </tr>
+<tr><td>u_id</td><td>VARCHAR(25)</td><td>No</td><td>Yes</td><td>No</td><td></td><td></td></tr>
+<tr><td>user_name</td><td>VARCHAR(25)</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+<tr><td>user_designation</td><td>VARCHAR(25)</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+<tr><td>user_password</td><td>VARCHAR(25)</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+<tr><td>user_contact_no</td><td>VARCHAR(25)</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+<tr><td>user_address</td><td>VARCHAR(25)</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+<tr><td>user_email</td><td>VARCHAR(45)</td><td>Yes</td><td>No</td><td>No</td><td>'example@gmailc.om'</td><td></td></tr>
+<tr><td>user_salary</td><td>VARCHAR(45)</td><td>Yes</td><td>No</td><td>No</td><td>NULL</td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="c_contact_details"></a><table style="width:100%"><caption>Table: c_contact_details </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        </tr>
+<tr><td>c_id</td><td>VARCHAR(25)</td><td>No</td><td>Yes</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>contact_No</td><td>VARCHAR(25)</td><td>No</td><td>Yes</td><td>No</td><td></td><td></td></tr>
+<tr><td>c_address</td><td>VARCHAR(25)</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+<tr><td>c_emailid</td><td>VARCHAR(25)</td><td>No</td><td>No</td><td>No</td><td>'example@gmail.com'</td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="ca_contact_details"></a><table style="width:100%"><caption>Table: ca_contact_details </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        </tr>
+<tr><td>contact_no</td><td>VARCHAR(25)</td><td>No</td><td>Yes</td><td>No</td><td></td><td></td></tr>
+<tr><td>s_id</td><td>VARCHAR(25)</td><td>No</td><td>Yes</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>ca_address</td><td>VARCHAR(25)</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+<tr><td>ca_emailid</td><td>VARCHAR(25)</td><td>No</td><td>No</td><td>No</td><td>'example@gmail.com'</td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="ca_salary_details"></a><table style="width:100%"><caption>Table: ca_salary_details </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        </tr>
+<tr><td>s_id</td><td>VARCHAR(25)</td><td>No</td><td>Yes</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>salary</td><td>VARCHAR(25)</td><td>Yes</td><td>No</td><td>No</td><td>NULL</td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="catering_info"></a><table style="width:100%"><caption>Table: catering_info </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        </tr>
+<tr><td>s_id</td><td>VARCHAR(25)</td><td>No</td><td>Yes</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>ca_name</td><td>VARCHAR(25)</td><td>Yes</td><td>No</td><td>No</td><td>NULL</td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="client"></a><table style="width:100%"><caption>Table: client </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        </tr>
+<tr><td>c_id</td><td>VARCHAR(25)</td><td>No</td><td>Yes</td><td>No</td><td></td><td></td></tr>
+<tr><td>payment_status</td><td>VARCHAR(25)</td><td>No</td><td>No</td><td>No</td><td>'UNPAID'</td><td></td></tr>
+<tr><td>advance_payment</td><td>VARCHAR(25)</td><td>No</td><td>No</td><td>No</td><td>'2000'</td><td></td></tr>
+<tr><td>total_payment</td><td>VARCHAR(25)</td><td>No</td><td>No</td><td>No</td><td>'0'</td><td></td></tr>
+<tr><td>client_type</td><td>VARCHAR(25)</td><td>Yes</td><td>No</td><td>No</td><td>NULL</td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="conference_info"></a><table style="width:100%"><caption>Table: conference_info </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        </tr>
+<tr><td>c_id</td><td>VARCHAR(25)</td><td>No</td><td>Yes</td><td>No</td><td></td><td></td></tr>
+<tr><td>c_name</td><td>VARCHAR(25)</td><td>Yes</td><td>No</td><td>No</td><td>NULL</td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="event"></a><table style="width:100%"><caption>Table: event </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        </tr>
+<tr><td>event_id</td><td>VARCHAR(25)</td><td>No</td><td>Yes</td><td>No</td><td></td><td></td></tr>
+<tr><td>e_name</td><td>VARCHAR(25)</td><td>Yes</td><td>No</td><td>No</td><td>NULL</td><td></td></tr>
+<tr><td>c_id</td><td>VARCHAR(25)</td><td>Yes</td><td>No</td><td>Yes</td><td>NULL</td><td></td></tr>
+<tr><td>venue_id</td><td>VARCHAR(25)</td><td>Yes</td><td>No</td><td>Yes</td><td>NULL</td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="event_schedule"></a><table style="width:100%"><caption>Table: event_schedule </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        </tr>
+<tr><td>e_date</td><td>VARCHAR(25)</td><td>Yes</td><td>No</td><td>No</td><td>NULL</td><td></td></tr>
+<tr><td>e_start_time</td><td>VARCHAR(25)</td><td>Yes</td><td>No</td><td>No</td><td>NULL</td><td></td></tr>
+<tr><td>venue_id</td><td>VARCHAR(25)</td><td>Yes</td><td>No</td><td>Yes</td><td>NULL</td><td></td></tr>
+<tr><td>event_id</td><td>VARCHAR(25)</td><td>Yes</td><td>No</td><td>Yes</td><td>NULL</td><td></td></tr>
+<tr><td>c_id</td><td>VARCHAR(25)</td><td>No</td><td>Yes</td><td>No</td><td></td><td></td></tr>
+<tr><td>e_description</td><td>VARCHAR(25)</td><td>No</td><td>Yes</td><td>No</td><td></td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="ids"></a><table style="width:100%"><caption>Table: ids </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        </tr>
+<tr><td>category</td><td>VARCHAR(25)</td><td>No</td><td>Yes</td><td>No</td><td></td><td></td></tr>
+<tr><td>latest_id</td><td>VARCHAR(25)</td><td>No</td><td>Yes</td><td>No</td><td></td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="inventory"></a><table style="width:100%"><caption>Table: inventory </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        </tr>
+<tr><td>model_no</td><td>VARCHAR(25)</td><td>No</td><td>Yes</td><td>No</td><td></td><td></td></tr>
+<tr><td>item_name</td><td>VARCHAR(25)</td><td>Yes</td><td>No</td><td>No</td><td>NULL</td><td></td></tr>
+<tr><td>event_id</td><td>VARCHAR(25)</td><td>Yes</td><td>No</td><td>Yes</td><td>NULL</td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="p_contact_details"></a><table style="width:100%"><caption>Table: p_contact_details </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        </tr>
+<tr><td>contact_no</td><td>VARCHAR(25)</td><td>No</td><td>Yes</td><td>No</td><td></td><td></td></tr>
+<tr><td>s_id</td><td>VARCHAR(25)</td><td>No</td><td>Yes</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>p_address</td><td>VARCHAR(25)</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+<tr><td>p_emailid</td><td>VARCHAR(25)</td><td>No</td><td>No</td><td>No</td><td>'example@gmail.com'</td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="p_salary_details"></a><table style="width:100%"><caption>Table: p_salary_details </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        </tr>
+<tr><td>s_id</td><td>VARCHAR(25)</td><td>No</td><td>Yes</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>salary</td><td>VARCHAR(25)</td><td>Yes</td><td>No</td><td>No</td><td>NULL</td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="production_info"></a><table style="width:100%"><caption>Table: production_info </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        </tr>
+<tr><td>s_id</td><td>VARCHAR(25)</td><td>No</td><td>Yes</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>p_name</td><td>VARCHAR(25)</td><td>Yes</td><td>No</td><td>No</td><td>NULL</td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="s_contact_details"></a><table style="width:100%"><caption>Table: s_contact_details </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        </tr>
+<tr><td>c_id</td><td>VARCHAR(25)</td><td>No</td><td>Yes</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>c_address</td><td>VARCHAR(25)</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+<tr><td>c_emailid</td><td>VARCHAR(25)</td><td>No</td><td>No</td><td>No</td><td>'example@gmail.com'</td><td></td></tr>
+<tr><td>contact_No</td><td>VARCHAR(25)</td><td>No</td><td>Yes</td><td>No</td><td></td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="seminar_info"></a><table style="width:100%"><caption>Table: seminar_info </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        </tr>
+<tr><td>c_id</td><td>VARCHAR(25)</td><td>No</td><td>Yes</td><td>No</td><td></td><td></td></tr>
+<tr><td>c_name</td><td>VARCHAR(25)</td><td>Yes</td><td>No</td><td>No</td><td>NULL</td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="staff"></a><table style="width:100%"><caption>Table: staff </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        </tr>
+<tr><td>s_id</td><td>VARCHAR(25)</td><td>No</td><td>Yes</td><td>No</td><td></td><td></td></tr>
+<tr><td>s_type</td><td>VARCHAR(25)</td><td>Yes</td><td>No</td><td>No</td><td>NULL</td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="venue"></a><table style="width:100%"><caption>Table: venue </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        </tr>
+<tr><td>v_name</td><td>VARCHAR(25)</td><td>Yes</td><td>No</td><td>No</td><td>NULL</td><td></td></tr>
+<tr><td>location</td><td>VARCHAR(25)</td><td>Yes</td><td>No</td><td>No</td><td>NULL</td><td></td></tr>
+<tr><td>venue_id</td><td>VARCHAR(25)</td><td>No</td><td>Yes</td><td>No</td><td></td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="w_contact_details"></a><table style="width:100%"><caption>Table: w_contact_details </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        </tr>
+<tr><td>c_id</td><td>VARCHAR(25)</td><td>No</td><td>Yes</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>c_address</td><td>VARCHAR(25)</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+<tr><td>c_emailid</td><td>VARCHAR(25)</td><td>No</td><td>No</td><td>No</td><td>'example@gmail.com'</td><td></td></tr>
+<tr><td>contact_No</td><td>VARCHAR(25)</td><td>No</td><td>Yes</td><td>No</td><td></td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="wedding_info"></a><table style="width:100%"><caption>Table: wedding_info </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        </tr>
+<tr><td>c_id</td><td>VARCHAR(25)</td><td>No</td><td>Yes</td><td>No</td><td></td><td></td></tr>
+<tr><td>c_name</td><td>VARCHAR(25)</td><td>Yes</td><td>No</td><td>No</td><td>NULL</td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+</body></html>
