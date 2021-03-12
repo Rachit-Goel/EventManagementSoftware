@@ -1,0 +1,22 @@
+<RCC>
+  <qresource lang="English" prefix="/">
+    <file>back-button.png</file>
+    <file>icon.ico</file>
+    <file>concert.png</file>
+    <file>inventory.png</file>
+    <file>man.png</file>
+    <file>staff.png</file>
+    <file>user.png</file>
+    <file>venue.png</file>
+    <file>Aqua.qss</file>
+    <file>ElegantDark.qss</file>
+    <file>delete.png</file>
+    <file>print.png</file>
+    <file>update.png</file>
+    <file>view.png</file>
+    <file>add.png</file>
+    <file>changepassword.png</file>
+    <file>deleteuser.png</file>
+    <file>adduser.png</file>
+  </qresource>
+</RCC>
