@@ -30,8 +30,8 @@ def ConnectDatabase():
     try:
         global cur
         global conn
-        conn = MySQLdb.connect(host='emsdatabase.cihtsb96tcbg.ap-south-1.rds.amazonaws.com', user='mainbanda',
-                               password='mainbanda', db='EMS_DB')
+        conn = MySQLdb.connect(host='*************************.rds.amazonaws.com', user='*********',     #write here the url of mysql_db server, username & password
+                               password='*********', db='EMS_DB')
         cur = conn.cursor()
         print("db connected")
     except:
